@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TUGAS PEMWEB</title>
+    </head>
+    <body>
+        <h1>TUGAS PEMROGRAMAN WEB</h1>
+        <hr>
+        <p>NAMA : SURYANI DEWI WULANDARI</p>
+        <p>NIM : 21102119</p>
+        <p>KELAS : SC1</p>
+        <hr>
+        <p>FORMULIR PENDAFTARAN RUMAH SAKIT</p>
+        <form>
+            <label>Nama Pasien :</label>
+            <input type = "text" id=" nama" name="nama">
+            <br> <br>
+            <label>No Rekam Medis : </label>
+            <input type = "tel" id="nomor" name="nomor">
+            <br> <br>
+            <label for="rujukan">Nomor Rujukan :</label>
+            <input type="hidden" id="rujukan" name="rujukan" value="12345">
+            <br><br>
+            <label for="angka">Usia Pasien:</label>
+            <input type="number" id="angka" name="angka">
+            <br><br>
+            <label for="email">Masukkan Email:</label>
+            <input type="email" id="email" name="email">
+            <br><br>
+            <label for="alamat">Alamat:</label><br>
+            <textarea id="alamat" name="alamat" rows="4" cols="50"></textarea>
+            <br> <br>
+            <label for="darah">Golongan Darah : </label>
+            <select id="darah" name="darah">
+                <option value="O">O</option>
+                <option value="A">A</option>
+                <option value="B">B</option>
+                <option value="AB">AB</option>
+            </select>
+            <br> <br>
+            <label>Jenis Kelamin : </label>
+            <input type="radio" id="laki" name="jkel">
+            <label for="laki">Laki-Laki</label>
+            <input type="radio" id="perempuan" name="jkel">
+            <label for="perempuan">Perempuan</label>
+            <br> <br>
+            <label for="tanggal">Pilih Tanggal Periksa: </label> <br>
+            <input type="date" id="tanggal" name="tanggal">
+            <br> <br>
+            <label for="tanggal-waktu">Pilih Tanggal dan Waktu Periksa:</label> <br>
+            <input type="datetime-local" id="tanggal-waktu" name="tanggal-waktu">
+            <br> <br> 
+            <label for="waktu">Pilih Waktu Periksa:</label>
+            <input type="time" id="waktu" name="waktu">
+            <br><br>
+            <label for="tingkat_rasa_sakit">Tingkat Rasa Sakit:</label>
+            <input type="range" id="tingkat_rasa_sakit" name="tingkat_rasa_sakit" min="0" max="10">
+            <br><br>
+            <label for="foto">Foto Pasien:</label><br>
+            <input type="image" id="foto" name="foto" src="images/foto.png" width="50" height="50">
+            <br><br>
+            <label for="catatan">Catatan Medis:</label>
+            <input type="file" id="catatan" name="catatan">
+            <br><br>
+            <label for="website">Berkas Tambahan:</label>
+            <input type="url" id="website" name="website" placeholder="Berkas Tambahan">
+            <br><br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <br><br>
+            <input type="reset" value="Reset">
+            <input type="search" id="cari_dokter" name="cari_dokter" placeholder="Cari Dokter">
+            <br><br>
+            <label for="warna">Warna Favorit Pasien:</label>
+            <input type="color" id="warna" name="warna">
+            <br><br>
+            <input type="submit" value="Daftar">
+            <br><br>
+        </form>
+    </body>
+</html>
