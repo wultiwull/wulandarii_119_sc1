@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir Perkuliahan</title>
+</head>
+<body>
+    <h4>Nama  : Handiyudha Dwiky Dharmawan</h4>
+    <h4>NIM   : 21102234</h4>
+    <h4>Kelas : S1 IF-SC1</h4>
+
+    <h2>Tugas Pemrograman Web</h2>
+    <h3>Implementasi HTML Form Element dan Input Attributes</h3>
+    <hr>
+    <header>
+        <h1>Formulir Pendaftaran Mahasiswa</h1>
+    </header>
+
+    <section>
+        <h2>Data Pribadi</h2>
+        <form action="">
+            <label for="foto">Foto Pribadi: </label><br>
+            <input type="image" src="/Images/download.jpeg" width="100"><br><br>
+            <label for="name">Nama Lengkap:</label>
+            <input type="text" id="name" name="name"><br><br>
+
+            <label for="birthday">Tanggal Lahir:</label>
+            <input type="date" name="birthday" id="birthday"><br><br>
+
+            <label for="age">Usia:</label>
+            <input type="number" id="age" name="age"><br><br>
+
+            <label for="phone">Nomor Handphone:</label>
+            <input type="tel" id="phone" name="phone"><br><br>
+
+            <label for="address">Alamat:</label><br>
+            <textarea name="address" id="address" cols="30" rows="10"></textarea><br><br>
+
+            <label for="gender">Jenis Kelamin:</label><br>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Laki-laki</label><br>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Perempuan</label><br><br>
+        </form>
+    </section>
+
+    <section>
+        <h2>Informasi Akademik</h2>
+        <form action="">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email"><br><br>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password"><br><br>
+
+            <label for="class">Jalur Pendaftaran:</label>
+            <select name="class" id="class">
+                <option value="sc1">Rapot</option>
+                <option value="mm1">Tes</option>
+            </select><br><br>
+
+            <label for="courses">Program Studi yang Dipilih:</label><br>
+            <input type="checkbox" id="IT" name="courses[]" value="IT">
+            <label for="IT">S1 Teknik Informatika</label><br>
+            <input type="checkbox" id="TT" name="courses[]" value="TT">
+            <label for="TT">S1 Teknik Telekomunikasi</label><br>
+            <input type="checkbox" id="TB" name="courses[]" value="">
+            <label for="TB">S1 Teknik Biomedis</label><br>
+            <input type="checkbox" id="FT" name="courses[]" value="FT">
+            <label for="FT">S1 Food Technology</label><br><br>
+
+            <label for="favcolor">Warna Kesukaan:</label><br>
+            <input type="color" name="favcolor" id="favcolor"><br><br>
+
+            <label for="departure-time">Waktu Produktif Anda:</label>
+            <input type="time" id="departure-time" name="departure-time"><br><br>
+
+            <label for="interest-level">Seberapa Antusias Anda Untuk Mengikuti Perkuliahan:</label><br>
+            <input type="range" id="interest-level" name="interest-level" min="1" max="100" step="1" ><br><br>
+
+            <label for="sosmed-link">Link Sosial Media Anda:</label>
+            <input type="url" id="sosmed-link" name="sosmed-link"><br><br>
+
+            <label for="upload-file">Upload Berkas:</label><br>
+            <input type="file" id="upload-file" name="upload-file"><br><br>
+
+            <input type="hidden" id="hidval" name="hidval" value="21102234"><br><br>
+
+            <input type="reset" value="Reset Formulir">
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+</body>
+</html>
