@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Absensi Mahasiswa</title>
+</head>
+<body>
+    <p>NAMA : SURYANI DEWI WULANDARI</p>
+    <p>NIM : 21102119</p>
+    <p>KELAS : SC1</p>
+    <br>
+    <h1>Absensi Mahasiswa</h1>
+    <p>Silakan klik tombol "Absen" untuk mencatat kehadiran mahasiswa.</p>
+    <ul id="daftarMahasiswa">
+        <li>Mahasiswa 1 <button onclick="absen(1)">Absen</button></li>
+        <li>Mahasiswa 2 <button onclick="absen(2)">Absen</button></li>
+        <li>Mahasiswa 3 <button onclick="absen(3)">Absen</button></li>
+    </ul>
+    <p>Daftar hadir:</p>
+    <ul id="daftarHadir"></ul>
+
+    <script>
+        // Inisialisasi objek untuk menyimpan data hadir
+        const hadir = {};
+
+        // Fungsi untuk mencatat kehadiran
+        function absen(mahasiswaId) {
+            const namaMahasiswa = `Mahasiswa ${mahasiswaId}`;
+            if (!hadir[namaMahasiswa]) {
+                hadir[namaMahasiswa] = true;
+
+                // Tampilkan nama mahasiswa yang hadir pada halaman
+                const daftarHadir = document.getElementById('daftarHadir');
+                const listItem = document.createElement('li');
+                listItem.textContent = namaMahasiswa;
+                daftarHadir.appendChild(listItem);
+            } else {
+                alert(`${namaMahasiswa} sudah hadir.`);
+            }
+        }
+    </script>
+</body>
+</html>
