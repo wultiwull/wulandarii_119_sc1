@@ -2,6 +2,52 @@
 <html>
 <head>
     <title>Absensi Mahasiswa</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        p {
+            margin: 10px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        #daftarMahasiswa li {
+            background-color: #fff;
+            padding: 10px;
+            margin: 5px;
+            border: 1px solid #ccc;
+        }
+
+        button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        #daftarHadir li {
+            background-color: #c2f0c2;
+            padding: 5px;
+            margin: 5px;
+        }
+    </style>
 </head>
 <body>
     <p>NAMA : SURYANI DEWI WULANDARI</p>
@@ -17,7 +63,7 @@
     </ul>
     <p>Daftar hadir:</p>
     <ul id="daftarHadir"></ul>
-
+    
     <script>
         // Inisialisasi objek untuk menyimpan data hadir
         const hadir = {};
