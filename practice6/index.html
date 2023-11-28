@@ -66,15 +66,9 @@
                     the creator, etc. Make it short and sweet, but not too short so
                     folks don't simply skip over it entirely.
                 </p>
-                <a href="#" class="btn btn-primary my2"
-                    onClick="getQuotes('https://ppbittp.xyz/index.php/quotes/q/my_quote/21102119','My Quotes')">My
-                    Quotes</a>
-                <a href="#" class="btn btn-primary my2"
-                    onClick="getQuotes('https://ppbittp.xyz/index.php/quotes/q/class_id/5','Class Quotes')">Class
-                    Quotes</a>
-                <a href="#" class="btn btn-primary my2"
-                    onClick="getQuotes('https://ppbittp.xyz/index.php/quotes','All Quotes')">All Quotes</a>
-
+                <a href="#" class="btn btn-primary my2" onClick="getQuotes('https://ppbittp.xyz/index.php/quotes/q/my_quote/21102119','My Quotes')">My Quotes</a>
+                <a href="#" class="btn btn-primary my2" onClick="getQuotes('https://ppbittp.xyz/index.php/quotes/q/class_id/5','Class Quotes')">Class Quotes</a>
+                <a href="#" class="btn btn-primary my2" onClick="getQuotes('https://ppbittp.xyz/index.php/quotes','All Quotes')">All Quotes</a>
                 <p>
                     <a href="#" class="btn btn-primary my-2">Main call to action</a>
                     <a href="#" class="btn btn-secondary my-2">Secondary action</a>
@@ -93,9 +87,7 @@
                                 <b class="card-title" id="card-title">Title</b><br />
                                 <small class="text-muted" id="card-name">Nama</small>
                                 <p class="card-text" id="card-description">
-                                    This is a wider card with supporting text below as a natural
-                                    leadin to additional content. This content is a little bit
-                                    longer.
+                                    This is a wider card with supporting text below as a natural leadin to additional content. This content is a little bit longer.
                                 </p>
                                 <div class="d-flex justify-content-between align-items-center">
                                     <div class="btn-group">
@@ -192,20 +184,7 @@
                         ")"
                     );
                     item.find("#card-date").html(myData["quotes"][i].updated);
-                    item.find("#view-detail").attr(
-                        "onClick",
-                        "callModal('" +
-                        myData["quotes"][i].title +
-                        "','" +
-                        myData["quotes"][i].name +
-                        " (" +
-                        myData["quotes"][i].class +
-                        ")','" +
-                        myData["quotes"][i].images +
-                        "','" +
-                        myData["quotes"][i].description +
-                        "')"
-                    );
+                    item.find("#view-detail").attr( "onClick", "callModal('" + myData["quotes"][i].title + "','" + myData["quotes"][i].name + " (" + myData["quotes"][i].class + ")','" + myData["quotes"][i].images + "','" + myData["quotes"][i].description + "')");
                     item.appendTo("#quote-items");
                 }
             });
